@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['page_0',['MAIN PAGE',['../index.html',1,'']]]
+  ['hardware_20documentation_0',['Hardware Documentation',['../hardware_page.html',1,'']]]
 ];

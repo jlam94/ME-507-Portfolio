@@ -15,7 +15,7 @@
  * - Use CubeIDE to code in C and understand the different functions of each hardware pin.
  *
  * @section req Requirements
- * This project created in California Polytechnic San Luis Obispo was provided by Professor Charlie Revfrem:
+ * This project requirements were made in California Polytechnic San Luis Obispo and provided by Professor Charlie Revfrem:
  *
  * @subsection electronics_req The Electronics Requirements:
  * - A custom PCB designed around an STM32F411 MCU (or similar) programmed in either C, C++ (or Rust, with permission).
@@ -37,4 +37,31 @@
  * - Your robot may not injure a human being or, through inaction, allow a human being to come to harm.
  * - Your robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
  * - Your robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.
+ * 
+ * @section hardware Hardware
+ * - If you want to learn more about the hardware, click [here](hardware_page).
+ * 
+ * @section software Software
+ * - If you want to learn more about the software, click [here](software_page).
+ * 
+ * @section repository REPOSITORY REFERENCE
+ * - All code that will be referenced in this portfolio relate to the project is accessible through https://github.com/jlam94/ME-507-Portfolio
+ * 
+ * However, you may find it more useful to read through the website exploring the source code.
+ * 
+ * @section info CONTACT INFO
+ * 
+ * <pre>   
+ * <b>Author:</b>         Jonathan Lam
+ * 
+ * <b>Email:</b>          jonathanlam0806@gmail.com
+ * 
+ * <b>LinkedIn:</b>       www.linkedin.com/in/jonathanlam2000
+ * 
+ * <b>Phone Number:</b>   (909) 760-9129  
+ * 
+ * <b>Major:</b>          Mechanical Engineer at Cal Poly San Luis Obispo
+ * 
+ * <b>Date:</b>           May 18, 2024
+ * </pre>
  */

@@ -26,6 +26,16 @@ var NAVTREE =
 [
   [ "the Koopa Slingers", "index.html", [
     [ "MAIN PAGE", "index.html", "index" ],
+    [ "Hardware Documentation", "hardware_page.html", [
+      [ "Introduction", "hardware_page.html#hardware_intro", null ],
+      [ "Components", "hardware_page.html#hardware_components", null ],
+      [ "Design", "hardware_page.html#hardware_design", null ]
+    ] ],
+    [ "Software Documentation", "software_page.html", [
+      [ "Introduction", "software_page.html#software_intro", null ],
+      [ "Architecture", "software_page.html#software_architecture", null ],
+      [ "Code", "software_page.html#software_code", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
