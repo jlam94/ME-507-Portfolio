@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "The Koopa Slingers", "index.html", [
+  [ "the Koopa Slingers", "index.html", [
     [ "MAIN PAGE", "index.html", "index" ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
