@@ -98,18 +98,25 @@ $(function(){initNavTree('software_page.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="software_intro"></a>
 Introduction</h1>
-<p>Detailed description of the software components used in the project.</p>
-<h1><a class="anchor" id="software_architecture"></a>
-Architecture</h1>
+<p>The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn't interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.</p>
+<h1><a class="anchor" id="FSM"></a>
+Finite State Machine</h1>
 <ul>
-<li>Software architecture overview</li>
-<li>Key modules and their interactions</li>
+<li>Here we show our first prototype of the finite state machine and its iterations.</li>
 </ul>
-<h1><a class="anchor" id="software_code"></a>
+<div class="image">
+<img src="fsm_diagram.png" alt=""/>
+<div class="caption">
+Finite State Machine Diagram</div></div>
+ <h1><a class="anchor" id="software_code"></a>
 Code</h1>
 <ul>
-<li>Code examples</li>
-<li>Key functions and their descriptions </li>
+<li>It is provided in this manual.</li>
+</ul>
+<h1><a class="anchor" id="additional_resources"></a>
+Additional Resources</h1>
+<ul>
+<li><a href="ME-507-PortFolio/ME-507-PortFolio/docs/ME507MANUAL.pdf">ME507MANUAL</a> eh? </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

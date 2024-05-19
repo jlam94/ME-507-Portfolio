@@ -1,14 +1,23 @@
 \chapter{Software Documentation}
 \hypertarget{software_page}{}\label{software_page}\index{Software Documentation@{Software Documentation}}
 \hypertarget{software_page_software_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{software_page_software_intro}
-Detailed description of the software components used in the project.\hypertarget{software_page_software_architecture}{}\doxysection{\texorpdfstring{Architecture}{Architecture}}\label{software_page_software_architecture}
+The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn\textquotesingle{}t interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.\hypertarget{software_page_FSM}{}\doxysection{\texorpdfstring{Finite State Machine}{Finite State Machine}}\label{software_page_FSM}
 
 \begin{DoxyItemize}
-\item Software architecture overview
-\item Key modules and their interactions
-\end{DoxyItemize}\hypertarget{software_page_software_code}{}\doxysection{\texorpdfstring{Code}{Code}}\label{software_page_software_code}
+\item Here we show our first prototype of the finite state machine and its iterations.
+\end{DoxyItemize}
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{fsm_diagram.png}
+\doxyfigcaption{Finite State Machine Diagram}
+\end{DoxyImage}
+\hypertarget{software_page_software_code}{}\doxysection{\texorpdfstring{Code}{Code}}\label{software_page_software_code}
 
 \begin{DoxyItemize}
-\item Code examples
-\item Key functions and their descriptions 
+\item It is provided in this manual.
+\end{DoxyItemize}\hypertarget{software_page_additional_resources}{}\doxysection{\texorpdfstring{Additional Resources}{Additional Resources}}\label{software_page_additional_resources}
+
+\begin{DoxyItemize}
+\item \href{ME-507-PortFolio/ME-507-PortFolio/docs/ME507MANUAL.pdf}{\texttt{ ME507\+MANUAL}} eh? 
 \end{DoxyItemize}

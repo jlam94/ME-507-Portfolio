@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['lse_5fstartup_5ftimeout_0',['LSE_STARTUP_TIMEOUT',['../stm32f4xx__hal__conf_8h.html#a85e6fc812dc26f7161a04be2568a5462',1,'stm32f4xx_hal_conf.h']]],
-  ['lse_5fvalue_1',['LSE_VALUE',['../stm32f4xx__hal__conf_8h.html#a7bbb9d19e5189a6ccd0fb6fa6177d20d',1,'stm32f4xx_hal_conf.h']]],
-  ['lsi_5fvalue_2',['LSI_VALUE',['../stm32f4xx__hal__conf_8h.html#a4872023e65449c0506aac3ea6bec99e9',1,'stm32f4xx_hal_conf.h']]]
+  ['info_0',['CONTACT INFO',['../index.html#info',1,'']]],
+  ['initialise_5fmonitor_5fhandles_1',['initialise_monitor_handles',['../syscalls_8c.html#a25c7f100d498300fff65568c2fcfe639',1,'syscalls.c']]],
+  ['instruction_5fcache_5fenable_2',['INSTRUCTION_CACHE_ENABLE',['../stm32f4xx__hal__conf_8h.html#a3379989d46599c7e19a43f42e9145a4a',1,'stm32f4xx_hal_conf.h']]],
+  ['introduction_3',['Introduction',['../hardware_page.html#hardware_intro',1,'Introduction'],['../software_page.html#software_intro',1,'Introduction']]]
 ];

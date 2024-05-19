@@ -33,8 +33,9 @@ var NAVTREE =
     ] ],
     [ "Software Documentation", "software_page.html", [
       [ "Introduction", "software_page.html#software_intro", null ],
-      [ "Architecture", "software_page.html#software_architecture", null ],
-      [ "Code", "software_page.html#software_code", null ]
+      [ "Finite State Machine", "software_page.html#FSM", null ],
+      [ "Code", "software_page.html#software_code", null ],
+      [ "Additional Resources", "software_page.html#additional_resources", null ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
@@ -59,7 +60,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+""
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
