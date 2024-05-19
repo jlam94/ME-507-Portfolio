@@ -19,6 +19,6 @@
  * - It is provided in this manual.
  *
  * @section additional_resources Additional Resources
- *- [ME507MANUAL](images/ME507MANUAL.pdf)
- * eh?
+ *- [ME507MANUAL](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/ME507MANUAL.pdf.)
+ * dwqji
  */
