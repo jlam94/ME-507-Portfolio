@@ -39,13 +39,13 @@
  * - Your robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.
  * 
  * @section hardware Hardware
- * - If you want to learn more about the hardware, click [here](hardware_page).
+ * If you want to learn more about the hardware, click [here](\ref hardware_page).
  * 
  * @section software Software
- * - If you want to learn more about the software, click [here](software_page).
+ * If you want to learn more about the software, click [here](\ref software_page).
  * 
  * @section repository REPOSITORY REFERENCE
- * - All code that will be referenced in this portfolio relate to the project is accessible through https://github.com/jlam94/ME-507-Portfolio
+ * All code that will be referenced in this portfolio relate to the project is accessible through https://github.com/jlam94/ME-507-Portfolio.
  * 
  * However, you may find it more useful to read through the website exploring the source code.
  * 
