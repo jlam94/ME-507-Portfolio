@@ -19,6 +19,6 @@
  * - It is provided in this manual.
  *
  * @section additional_resources Additional Resources
- *- [ME507MANUAL](ME-507-PortFolio/ME-507-PortFolio/docs/ME507MANUAL.pdf)
+ *- [ME507MANUAL](images/ME507MANUAL.pdf)
  * eh?
  */
