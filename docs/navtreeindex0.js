@@ -84,7 +84,6 @@ var NAVTREEINDEX0 =
 "software_8c.html":[5,0,1,2],
 "software_page.html":[2],
 "software_page.html#FSM":[2,1],
-"software_page.html#additional_resources":[2,3],
 "software_page.html#software_code":[2,2],
 "software_page.html#software_intro":[2,0],
 "stm32f4xx__hal__conf_8h.html":[5,0,0,0,0,2],
@@ -248,6 +247,7 @@ var NAVTREEINDEX0 =
 "system__stm32f4xx_8c.html":[5,0,0,0,1,6],
 "topics.html":[3],
 "":[5,0,0,0,0,0],
+"":[5,0,0,0,0,1],
 "":[5,0,0,0,0,2],
 "":[5,0,0,0,0,3]
 };
