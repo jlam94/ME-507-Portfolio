@@ -28,8 +28,10 @@ var NAVTREE =
     [ "MAIN PAGE", "index.html", "index" ],
     [ "Hardware Documentation", "hardware_page.html", [
       [ "Introduction", "hardware_page.html#hardware_intro", null ],
-      [ "Components", "hardware_page.html#hardware_components", null ],
-      [ "Design", "hardware_page.html#hardware_design", null ]
+      [ "First Hardware: The Glove Controller", "hardware_page.html#gloves", null ],
+      [ "Bill of Materials", "hardware_page.html#hardware_components", null ],
+      [ "Schematic", "hardware_page.html#schematic", null ],
+      [ "Common Challenges", "hardware_page.html#common_problems", null ]
     ] ],
     [ "Software Documentation", "software_page.html", [
       [ "Introduction", "software_page.html#software_intro", null ],
@@ -59,7 +61,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+""
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

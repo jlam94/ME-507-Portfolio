@@ -1,14 +1,75 @@
 \chapter{Hardware Documentation}
 \hypertarget{hardware_page}{}\label{hardware_page}\index{Hardware Documentation@{Hardware Documentation}}
 \hypertarget{hardware_page_hardware_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{hardware_page_hardware_intro}
-Detailed description of the hardware components used in the project.\hypertarget{hardware_page_hardware_components}{}\doxysection{\texorpdfstring{Components}{Components}}\label{hardware_page_hardware_components}
+This is the hardware section which gives details about the part details, cost, and how to solve common problems.\hypertarget{hardware_page_gloves}{}\doxysection{\texorpdfstring{First Hardware\+: The Glove Controller}{First Hardware\+: The Glove Controller}}\label{hardware_page_gloves}
+\hypertarget{hardware_page_hardware_components}{}\doxysection{\texorpdfstring{Bill of Materials}{Bill of Materials}}\label{hardware_page_hardware_components}
+As part of the requirements on this project, as a team we created a bill of materials and it can be seen \href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx}{\texttt{ here}}. The first tab shows the mechanical parts and parts that we got from Amazon, while the second tab shows our electronic components from the Digi\+Key website. The link to the URLs are in the Bill of Materials and the CAD can be downloaded from there.\hypertarget{hardware_page_schematic}{}\doxysection{\texorpdfstring{Schematic}{Schematic}}\label{hardware_page_schematic}
+In this section, it shows the basketball launcher e\+CAD schematics. It is detailed in the following pages\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Page   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Page   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endhead
+1   &\href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p1.png}{\texttt{ Power Related Parts}}    \\\cline{1-2}
+2   &\href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p2.png}{\texttt{ Microcontroller}}    \\\cline{1-2}
+3   &\href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p3.png}{\texttt{ Motor Related Parts}}    \\\cline{1-2}
+4   &\href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p4.png}{\texttt{ Additional Components and ESC}}   \\\cline{1-2}
+\end{longtabu}
+
+
 
 \begin{DoxyItemize}
-\item List of hardware components
-\item Schematics and diagrams
-\end{DoxyItemize}\hypertarget{hardware_page_hardware_design}{}\doxysection{\texorpdfstring{Design}{Design}}\label{hardware_page_hardware_design}
+\item 
+\item 
+\item 
+\item 
+\end{DoxyItemize}\hypertarget{hardware_page_common_problems}{}\doxysection{\texorpdfstring{Common Challenges}{Common Challenges}}\label{hardware_page_common_problems}
+This section shows some common challenges we encountered and how to troubleshoot them\+:
+
 
 \begin{DoxyItemize}
-\item Design considerations
-\item Design process 
+\item {\bfseries{Problem\+:}} Solder sticking to the board causing parts to short.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} Look carefully for the soldering blob, do not use too much soldering wire; blobs are caused by excess solder.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} The library does not show up in the Fusion 360 e\+Drawings.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}}
+\begin{DoxyEnumerate}
+\item Download the part with the STEP and the library from Digi\+Key.
+\item Open Fusion 360.
+\item Create a new folder and a new electronics library.
+\item Open Library Manager and import libraries from local disk.
+\item Right-\/click the library and click "{}\+Edit Fusion 360 copy"{}.
+\item Click Footprint and move the name and values.
+\item Right-\/click and select 3D sketch.
+\item Open the STEP file and drag it into the 3D drawing; it should be linked after you save.
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} The limit switch does not trigger the GPIO.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} This can be due to the LED in the limit switch that is included in the product; it reduces the voltage output. It is recommended to short the LED and use the limit switch.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} In Fusion 360, routing error "{}\+PCB out of Sync"{} which doesn\textquotesingle{}t let you route after.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} Push the schematic, then the footprint so it updates in the PCB routing.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} In Fusion 360, routing error "{}\+Overlap"{} in the microcontroller ground vias.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} Just click on the part and select "{}\+Approved"{} in the DRC.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} How do you know how much trace width you need?
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} Use a trace width calculator. I recommend \href{https://www.4pcb.com/trace-width-calculator.html}{\texttt{ this one}}.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} How do you know if the LED or parts are connected on your PCB correctly so it doesn\textquotesingle{}t accidentally short circuit?
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} Use a multimeter and check for continuity; if it is connected correctly, it should beep. 
+\end{DoxyItemize}
 \end{DoxyItemize}

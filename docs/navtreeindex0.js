@@ -32,11 +32,13 @@ var NAVTREEINDEX0 =
 "group__stm32f4xx__system.html":[3,0,0],
 "hardware_8c.html":[5,0,1,0],
 "hardware_page.html":[1],
-"hardware_page.html#hardware_components":[1,1],
-"hardware_page.html#hardware_design":[1,2],
+"hardware_page.html#common_problems":[1,4],
+"hardware_page.html#gloves":[1,1],
+"hardware_page.html#hardware_components":[1,2],
 "hardware_page.html#hardware_intro":[1,0],
-"index.html":[0],
+"hardware_page.html#schematic":[1,3],
 "index.html":[],
+"index.html":[0],
 "index.html#electronics_req":[0,1,0],
 "index.html#goals":[0,0],
 "index.html#hardware":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "system__stm32f4xx_8c.html":[5,0,0,0,1,6],
 "topics.html":[3],
 "":[5,0,0,0,0,0],
-"":[5,0,0,0,0,1],
-"":[5,0,0,0,0,2],
-"":[5,0,0,0,0,3]
+"":[5,0,0,0,0,1]
 };
