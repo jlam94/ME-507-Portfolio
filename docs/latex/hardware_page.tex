@@ -1,7 +1,7 @@
 \chapter{Hardware Documentation}
 \hypertarget{hardware_page}{}\label{hardware_page}\index{Hardware Documentation@{Hardware Documentation}}
 \hypertarget{hardware_page_hardware_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{hardware_page_hardware_intro}
-This is the hardware section which gives details about the part details, cost, and how to solve common problems.\hypertarget{hardware_page_gloves}{}\doxysection{\texorpdfstring{First Hardware\+: The Glove Controller}{First Hardware\+: The Glove Controller}}\label{hardware_page_gloves}
+This is the hardware section which gives details about the part details, cost, and how to solve common problems.\hypertarget{hardware_page_con}{}\doxysection{\texorpdfstring{con}{con}}\label{hardware_page_con}
 \hypertarget{hardware_page_hardware_components}{}\doxysection{\texorpdfstring{Bill of Materials}{Bill of Materials}}\label{hardware_page_hardware_components}
 As part of the requirements on this project, as a team we created a bill of materials and it can be seen \href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx}{\texttt{ here}}. The first tab shows the mechanical parts and parts that we got from Amazon, while the second tab shows our electronic components from the Digi\+Key website. The link to the URLs are in the Bill of Materials and the CAD can be downloaded from there.\hypertarget{hardware_page_schematic}{}\doxysection{\texorpdfstring{Schematic}{Schematic}}\label{hardware_page_schematic}
 In this section, it shows the basketball launcher e\+CAD schematics. It is detailed in the following pages\+:
@@ -70,6 +70,10 @@ This section shows some common challenges we encountered and how to troubleshoot
 \end{DoxyItemize}
 \item {\bfseries{Problem\+:}} How do you know if the LED or parts are connected on your PCB correctly so it doesn\textquotesingle{}t accidentally short circuit?
 \begin{DoxyItemize}
-\item {\bfseries{Solution\+:}} Use a multimeter and check for continuity; if it is connected correctly, it should beep. 
+\item {\bfseries{Solution\+:}} Use a multimeter and check for continuity; if it is connected correctly, it should beep.
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} The brushless DC motor does not launch the ball far enough.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} The issue is that the rubber band that contacts the ball was press-\/fitted, and at high speeds, the rubber dilates, blocking the ball from launching. The solution is to glue the rubber into the CAD wheel. \href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/Wheel Dilation.mp4}{\texttt{ Here\textquotesingle{}s a video demonstrating the issue}}. 
 \end{DoxyItemize}
 \end{DoxyItemize}

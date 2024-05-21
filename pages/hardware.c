@@ -9,7 +9,7 @@
  * @section hardware_intro Introduction
  * This is the hardware section which gives details about the part details, cost, and how to solve common problems.
  * 
- * @section gloves First Hardware: The Glove Controller
+ * @section con
  * 
  * @section hardware_components Bill of Materials
  * As part of the requirements on this project, as a team we created a bill of materials and it can be seen [here](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx).
@@ -63,4 +63,6 @@
  * - **Problem:** How do you know if the LED or parts are connected on your PCB correctly so it doesn't accidentally short circuit?
  *   - **Solution:** Use a multimeter and check for continuity; if it is connected correctly, it should beep.
  * 
+ * - **Problem:** The brushless DC motor does not launch the ball far enough.
+ *   - **Solution:** The issue is that the rubber band that contacts the ball was press-fitted, and at high speeds, the rubber dilates, blocking the ball from launching. The solution is to glue the rubber into the CAD wheel. [Here's a video demonstrating the issue](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/Wheel Dilation.mp4).
  */

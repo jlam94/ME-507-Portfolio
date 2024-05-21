@@ -33,7 +33,7 @@ var NAVTREEINDEX0 =
 "hardware_8c.html":[5,0,1,0],
 "hardware_page.html":[1],
 "hardware_page.html#common_problems":[1,4],
-"hardware_page.html#gloves":[1,1],
+"hardware_page.html#con":[1,1],
 "hardware_page.html#hardware_components":[1,2],
 "hardware_page.html#hardware_intro":[1,0],
 "hardware_page.html#schematic":[1,3],

@@ -19,12 +19,11 @@ var searchData=
   ['hardware_16',['Hardware',['../index.html#hardware',1,'']]],
   ['hardware_20documentation_17',['Hardware Documentation',['../hardware_page.html',1,'']]],
   ['hardware_2ec_18',['hardware.c',['../hardware_8c.html',1,'']]],
-  ['hardware_3a_20the_20glove_20controller_19',['First Hardware: The Glove Controller',['../hardware_page.html#gloves',1,'']]],
-  ['hi2c_20',['hi2c',['../struct_m_p_u6050.html#abf45242a4a812df409b53ce5216f8d7e',1,'MPU6050']]],
-  ['hi2c1_21',['hi2c1',['../main_8c.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'main.c']]],
-  ['hse_5fstartup_5ftimeout_22',['HSE_STARTUP_TIMEOUT',['../stm32f4xx__hal__conf_8h.html#a68ecbc9b0a1a40a1ec9d18d5e9747c4f',1,'stm32f4xx_hal_conf.h']]],
-  ['hse_5fvalue_23',['HSE_VALUE',['../stm32f4xx__hal__conf_8h.html#aeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;stm32f4xx_hal_conf.h'],['../group___s_t_m32_f4xx___system___private___includes.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;system_stm32f4xx.c']]],
-  ['hsi_5fvalue_24',['HSI_VALUE',['../stm32f4xx__hal__conf_8h.html#aaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;stm32f4xx_hal_conf.h'],['../group___s_t_m32_f4xx___system___private___includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;system_stm32f4xx.c']]],
-  ['huart1_25',['huart1',['../main_8c.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'main.c']]],
-  ['huart2_26',['huart2',['../main_8c.html#aa9479c261d65eecedd3d9582f7f0f89c',1,'main.c']]]
+  ['hi2c_19',['hi2c',['../struct_m_p_u6050.html#abf45242a4a812df409b53ce5216f8d7e',1,'MPU6050']]],
+  ['hi2c1_20',['hi2c1',['../main_8c.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'main.c']]],
+  ['hse_5fstartup_5ftimeout_21',['HSE_STARTUP_TIMEOUT',['../stm32f4xx__hal__conf_8h.html#a68ecbc9b0a1a40a1ec9d18d5e9747c4f',1,'stm32f4xx_hal_conf.h']]],
+  ['hse_5fvalue_22',['HSE_VALUE',['../stm32f4xx__hal__conf_8h.html#aeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;stm32f4xx_hal_conf.h'],['../group___s_t_m32_f4xx___system___private___includes.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;system_stm32f4xx.c']]],
+  ['hsi_5fvalue_23',['HSI_VALUE',['../stm32f4xx__hal__conf_8h.html#aaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;stm32f4xx_hal_conf.h'],['../group___s_t_m32_f4xx___system___private___includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;system_stm32f4xx.c']]],
+  ['huart1_24',['huart1',['../main_8c.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'main.c']]],
+  ['huart2_25',['huart2',['../main_8c.html#aa9479c261d65eecedd3d9582f7f0f89c',1,'main.c']]]
 ];

@@ -99,8 +99,8 @@ $(function(){initNavTree('hardware_page.html',''); initResizable(); });
 <div class="textblock"><h1><a class="anchor" id="hardware_intro"></a>
 Introduction</h1>
 <p>This is the hardware section which gives details about the part details, cost, and how to solve common problems.</p>
-<h1><a class="anchor" id="gloves"></a>
-First Hardware: The Glove Controller</h1>
+<h1><a class="anchor" id="con"></a>
+con</h1>
 <h1><a class="anchor" id="hardware_components"></a>
 Bill of Materials</h1>
 <p>As part of the requirements on this project, as a team we created a bill of materials and it can be seen <a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx">here</a>. The first tab shows the mechanical parts and parts that we got from Amazon, while the second tab shows our electronic components from the DigiKey website. The link to the URLs are in the Bill of Materials and the CAD can be downloaded from there.</p>
@@ -180,7 +180,11 @@ Common Challenges</h1>
 </ul>
 </li>
 <li><b>Problem:</b> How do you know if the LED or parts are connected on your PCB correctly so it doesn't accidentally short circuit?<ul>
-<li><b>Solution:</b> Use a multimeter and check for continuity; if it is connected correctly, it should beep. </li>
+<li><b>Solution:</b> Use a multimeter and check for continuity; if it is connected correctly, it should beep.</li>
+</ul>
+</li>
+<li><b>Problem:</b> The brushless DC motor does not launch the ball far enough.<ul>
+<li><b>Solution:</b> The issue is that the rubber band that contacts the ball was press-fitted, and at high speeds, the rubber dilates, blocking the ball from launching. The solution is to glue the rubber into the CAD wheel. <a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/Wheel Dilation.mp4">Here's a video demonstrating the issue</a>. </li>
 </ul>
 </li>
 </ul>
