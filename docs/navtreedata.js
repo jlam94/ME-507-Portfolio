@@ -28,7 +28,7 @@ var NAVTREE =
     [ "MAIN PAGE", "index.html", "index" ],
     [ "Hardware Documentation", "hardware_page.html", [
       [ "Introduction", "hardware_page.html#hardware_intro", null ],
-      [ "con", "hardware_page.html#con", null ],
+      [ "Initial Concept", "hardware_page.html#initial", null ],
       [ "Bill of Materials", "hardware_page.html#hardware_components", null ],
       [ "Schematic", "hardware_page.html#schematic", null ],
       [ "Common Challenges", "hardware_page.html#common_problems", null ]
