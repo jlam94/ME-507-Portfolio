@@ -14,6 +14,6 @@
  * - @image html FSM1.png "Finite State Machine Diagram, Second Concept"
  * 
  * @section software_code Code
- * - It is provided in this [manual](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/ME507MANUAL.pdf).
+ * - It is provided in this [manual](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf).
  * 
  */
