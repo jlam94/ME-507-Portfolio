@@ -64,8 +64,8 @@
  *        - Close the modules.
  *     9. **Verify both modules are working:**
  *        - Turn both Bluetooth modules on. Both should be blinking at the same pace, indicating they are paired.
- *- @image html FTDI(1).png "The Option menu for AT baudrate"
- *- @image html FTDI(2).png "The Option menu for terminal and echo mode"
+ *- @image html FTDI1.png "The Option menu for AT baudrate"
+ *- @image html FTDI2.png "The Option menu for terminal and echo mode"
  * - **Problem:** The FSM is not transitioning states as expected.
  *   - **Solution:**
  *     1. Review the state transition conditions in the code.
