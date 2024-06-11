@@ -1,7 +1,10 @@
 \chapter{Software Documentation}
 \hypertarget{software_page}{}\label{software_page}\index{Software Documentation@{Software Documentation}}
 \hypertarget{software_page_software_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{software_page_software_intro}
-The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn\textquotesingle{}t interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.\hypertarget{software_page_FSM}{}\doxysection{\texorpdfstring{Finite State Machine}{Finite State Machine}}\label{software_page_FSM}
+The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn\textquotesingle{}t interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\hypertarget{software_page_FSM}{}\doxysection{\texorpdfstring{Finite State Machine}{Finite State Machine}}\label{software_page_FSM}
 
 \begin{DoxyItemize}
 \item 
@@ -9,5 +12,107 @@ The main goal of our code is the process of communication between Bluetooth. Mor
 \end{DoxyItemize}\hypertarget{software_page_software_code}{}\doxysection{\texorpdfstring{Code}{Code}}\label{software_page_software_code}
 
 \begin{DoxyItemize}
-\item It is provided in this \href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf}{\texttt{ manual}}. 
+\item It is provided in this \href{https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf}{\texttt{ manual}}.
+\end{DoxyItemize}\hypertarget{software_page_common_problems}{}\doxysection{\texorpdfstring{Common Challenges}{Common Challenges}}\label{software_page_common_problems}
+This section shows some common challenges we encountered and how to troubleshoot them\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Problem\+:}} How do you set up the wireless Bluetooth for the controller?
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}} We use an FTDI connector which opens a port for the HC-\/05 Bluetooth module. You can follow this \href{https://www.youtube.com/watch?v=K6meDX8Xmpc&t=335s&ab_channel=MicroPetabyNizarMohideen}{\texttt{ link}} for a tutorial. In case the link is outdated, here are the steps\+:
+\begin{DoxyEnumerate}
+\item {\bfseries{Connect the HC-\/05 Bluetooth module to the FTDI connector\+:}}
+\begin{DoxyItemize}
+\item VCC to 5V Bluetooth
+\item GND to GND
+\item TX FTDI to RX Bluetooth
+\item RX FTDI to TX Bluetooth
+\end{DoxyItemize}
+\item {\bfseries{Power on the module and check the LED\+:}}
+\begin{DoxyItemize}
+\item Ensure the LED blinks rapidly (indicating power is on).
+\item Turn the module off.
+\end{DoxyItemize}
+\item {\bfseries{Enter setup mode\+:}}
+\begin{DoxyItemize}
+\item Hold the HC-\/05 button while the module is off.
+\item Turn the module on while holding the button.
+\item The LED should blink slowly, indicating setup mode.
+\end{DoxyItemize}
+\item {\bfseries{Download and open Cool\+Term\+:}}
+\begin{DoxyItemize}
+\item Download the \href{https://freeware.the-meiers.org/}{\texttt{ program}} (verified to be virus-\/free).
+\item Open Cool\+Term.\+exe.
+\end{DoxyItemize}
+\item {\bfseries{Configure Cool\+Term\+:}}
+\begin{DoxyItemize}
+\item Go to the "{}\+Options"{} menu.
+\item Select the COM port corresponding to your USB device from the device manager.
+\item Set the baud rate to 38400 (HC-\/05 AT command baud rate).
+\end{DoxyItemize}
+\item {\bfseries{Enable local echo in Cool\+Term\+:}}
+\begin{DoxyItemize}
+\item Go to the "{}\+Options"{} menu.
+\item Click on the "{}\+Terminal"{} tab.
+\item Check the "{}\+Local Echo"{} option.
+\item Exit the "{}\+Options"{} menu.
+\end{DoxyItemize}
+\item {\bfseries{Connect to the port and send AT commands for the master\+:}}
+\begin{DoxyItemize}
+\item Click "{}\+Connect"{} in Cool\+Term.
+\item Type the following commands\+:
+\begin{DoxyItemize}
+\item {\ttfamily AT} (should reply with "{}\+OK"{}).
+\item {\ttfamily AT+\+UART?} (checks current baud rate).
+\item {\ttfamily AT+\+UART=9600,0,0} (sets baud rate to 9600).
+\item {\ttfamily AT+\+ROLE=0} (sets the module as the master).
+\item {\ttfamily AT+\+CMODE=1} (sets the Bluetooth module to receive another Bluetooth module signal only 1 more).
+\item {\ttfamily AT+\+ADDR?} (checks for the address; you need to copy this and paste it into a notepad. It should be in the format xxxx\+:xx\+:xxxxxx).
+\end{DoxyItemize}
+\item Change the colons (\+:) in the address to commas (,), so it is in the format xxxx,xx,xxxxxx.
+\item Turn off the module and set up the slave.
+\end{DoxyItemize}
+\item {\bfseries{Connect the port and send AT commands for the slave\+:}}
+\begin{DoxyItemize}
+\item Follow the same steps as before up to {\ttfamily AT+\+ROLE=1} (since it makes the module a slave).
+\item {\ttfamily AT+\+CMODE=0} (since you don\textquotesingle{}t want the slave to wait for a signal, you need to set it to 0).
+\item {\ttfamily AT+\+BIND=xxxx,xx,xxxxxx} (this pairs the slave to the master).
+\item Close the modules.
+\end{DoxyItemize}
+\item {\bfseries{Verify both modules are working\+:}}
+\begin{DoxyItemize}
+\item Turn both Bluetooth modules on. Both should be blinking at the same pace, indicating they are paired.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Problem\+:}} The FSM is not transitioning states as expected.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}}
+\begin{DoxyEnumerate}
+\item Review the state transition conditions in the code.
+\item Ensure all state variables are correctly initialized.
+\item Add debug print statements to track the state transitions.
+\item Check for any blocking code that might prevent state transitions.
+\item Simulate different input conditions to verify state transitions.
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+\item {\bfseries{Problem\+:}} The brushless motor does not respond to commands.
+\begin{DoxyItemize}
+\item {\bfseries{Solution\+:}}
+\begin{DoxyEnumerate}
+\item Verify the motor driver connections and power supply.
+\item Check the control signals being sent to the motor driver.
+\item Ensure the motor driver is configured correctly for the brushless motor.
+\item Test the motor driver and motor separately to confirm functionality.
+\item Use an oscilloscope to check the PWM signals sent to the motor. 
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+\end{DoxyItemize}
 \end{DoxyItemize}

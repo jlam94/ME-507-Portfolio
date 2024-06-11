@@ -98,25 +98,139 @@ $(function(){initNavTree('software_page.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="software_intro"></a>
 Introduction</h1>
-<p>The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn't interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.</p>
+<p>The main goal of our code is the process of communication between Bluetooth. More specifically, the communication between our Inertia Measurement Unit (IMU). Therefore, our code reads the values from the IMU and then prints them into a UART through Bluetooth and communicates them to the master. Additionally, our code needed to run in a Finite State Machine (FSM) so it doesn't interrupt our code and gives orders to the other motors and the brushless motors to shoot the ball.</p><ul>
+<li><div class="image">
+<img src="control.png" alt=""/>
+<div class="caption">
+The Hand Controller, It sends IMU information using HC-05 Bluetooth</div></div>
+</li>
+</ul>
 <h1><a class="anchor" id="FSM"></a>
 Finite State Machine</h1>
 <ul>
 <li><div class="image">
 <img src="FSM2.png" alt=""/>
 <div class="caption">
-Finite State Machine Diagram, First Concept</div></div>
+Finite State Machine Diagram, Main System</div></div>
 </li>
 <li><div class="image">
 <img src="FSM1.png" alt=""/>
 <div class="caption">
-Finite State Machine Diagram, Second Concept</div></div>
+Finite State Machine Diagram, Hand Controller</div></div>
 </li>
 </ul>
 <h1><a class="anchor" id="software_code"></a>
 Code</h1>
 <ul>
-<li>It is provided in this <a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf">manual</a>. </li>
+<li>It is provided in this <a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf">manual</a>.</li>
+</ul>
+<h1><a class="anchor" id="common_problems"></a>
+Common Challenges</h1>
+<p>This section shows some common challenges we encountered and how to troubleshoot them:</p>
+<ul>
+<li><b>Problem:</b> How do you set up the wireless Bluetooth for the controller?<ul>
+<li><b>Solution:</b> We use an FTDI connector which opens a port for the HC-05 Bluetooth module. You can follow this <a href="https://www.youtube.com/watch?v=K6meDX8Xmpc&amp;t=335s&amp;ab_channel=MicroPetabyNizarMohideen">link</a> for a tutorial. In case the link is outdated, here are the steps:<ol type="1">
+<li><b>Connect the HC-05 Bluetooth module to the FTDI connector:</b><ul>
+<li>VCC to 5V Bluetooth</li>
+<li>GND to GND</li>
+<li>TX FTDI to RX Bluetooth</li>
+<li>RX FTDI to TX Bluetooth</li>
+</ul>
+</li>
+<li><b>Power on the module and check the LED:</b><ul>
+<li>Ensure the LED blinks rapidly (indicating power is on).</li>
+<li>Turn the module off.</li>
+</ul>
+</li>
+<li><b>Enter setup mode:</b><ul>
+<li>Hold the HC-05 button while the module is off.</li>
+<li>Turn the module on while holding the button.</li>
+<li>The LED should blink slowly, indicating setup mode.</li>
+</ul>
+</li>
+<li><b>Download and open CoolTerm:</b><ul>
+<li>Download the <a href="https://freeware.the-meiers.org/">program</a> (verified to be virus-free).</li>
+<li>Open CoolTerm.exe.</li>
+</ul>
+</li>
+<li><b>Configure CoolTerm:</b><ul>
+<li>Go to the "Options" menu.</li>
+<li>Select the COM port corresponding to your USB device from the device manager.</li>
+<li>Set the baud rate to 38400 (HC-05 AT command baud rate).</li>
+</ul>
+</li>
+<li><b>Enable local echo in CoolTerm:</b><ul>
+<li>Go to the "Options" menu.</li>
+<li>Click on the "Terminal" tab.</li>
+<li>Check the "Local Echo" option.</li>
+<li>Exit the "Options" menu.</li>
+</ul>
+</li>
+<li><b>Connect to the port and send AT commands for the master:</b><ul>
+<li>Click "Connect" in CoolTerm.</li>
+<li>Type the following commands:<ul>
+<li><code>AT</code> (should reply with "OK").</li>
+<li><code>AT+UART?</code> (checks current baud rate).</li>
+<li><code>AT+UART=9600,0,0</code> (sets baud rate to 9600).</li>
+<li><code>AT+ROLE=0</code> (sets the module as the master).</li>
+<li><code>AT+CMODE=1</code> (sets the Bluetooth module to receive another Bluetooth module signal only 1 more).</li>
+<li><code>AT+ADDR?</code> (checks for the address; you need to copy this and paste it into a notepad. It should be in the format xxxx:xx:xxxxxx).</li>
+</ul>
+</li>
+<li>Change the colons (:) in the address to commas (,), so it is in the format xxxx,xx,xxxxxx.</li>
+<li>Turn off the module and set up the slave.</li>
+</ul>
+</li>
+<li><b>Connect the port and send AT commands for the slave:</b><ul>
+<li>Follow the same steps as before up to <code>AT+ROLE=1</code> (since it makes the module a slave).</li>
+<li><code>AT+CMODE=0</code> (since you don't want the slave to wait for a signal, you need to set it to 0).</li>
+<li><code>AT+BIND=xxxx,xx,xxxxxx</code> (this pairs the slave to the master).</li>
+<li>Close the modules.</li>
+</ul>
+</li>
+<li><b>Verify both modules are working:</b><ul>
+<li>Turn both Bluetooth modules on. Both should be blinking at the same pace, indicating they are paired.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<div class="image">
+<img src="FTDI" alt=""/>
+<div class="caption">
+(1).png "The Option menu for AT baudrate"</div></div>
+<ul>
+<li><div class="image">
+<img src="FTDI" alt=""/>
+<div class="caption">
+(2).png "The Option menu for terminal and echo mode"</div></div>
+<ul>
+<li><b>Problem:</b> The FSM is not transitioning states as expected.<ul>
+<li><b>Solution:</b><ol type="1">
+<li>Review the state transition conditions in the code.</li>
+<li>Ensure all state variables are correctly initialized.</li>
+<li>Add debug print statements to track the state transitions.</li>
+<li>Check for any blocking code that might prevent state transitions.</li>
+<li>Simulate different input conditions to verify state transitions.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><b>Problem:</b> The brushless motor does not respond to commands.<ul>
+<li><b>Solution:</b><ol type="1">
+<li>Verify the motor driver connections and power supply.</li>
+<li>Check the control signals being sent to the motor driver.</li>
+<li>Ensure the motor driver is configured correctly for the brushless motor.</li>
+<li>Test the motor driver and motor separately to confirm functionality.</li>
+<li>Use an oscilloscope to check the PWM signals sent to the motor. </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
