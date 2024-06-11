@@ -6,7 +6,8 @@
 /**
  * @mainpage MAIN PAGE
  *
- * 
+ * - @image html FINAL.JPEG "The Final Product, The Basketball Launcher "
+ * - @image html control.png "The Final Product, The Bluetooth Controller"
  * @section goals Goals
  * - Understand the use of wireless protocols like Bluetooth
  * - Understand electronics considerations and budget management using bill of material
