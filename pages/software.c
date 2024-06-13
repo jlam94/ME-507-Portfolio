@@ -15,7 +15,7 @@
  * - @image html FSM1.png "Finite State Machine Diagram, Hand Controller"
  * 
  * @section software_code Code
- * - It is provided in this [manual](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/pages/ME507MANUAL.pdf).
+ * - It is provided in this [manual](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/Documentation/REFERENCE MANUAL.pdf).
  * 
  * @section common_problems Common Challenges
  * This section shows some common challenges we encountered and how to troubleshoot them:

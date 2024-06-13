@@ -98,21 +98,33 @@ $(function(){initNavTree('hardware_page.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="hardware_intro"></a>
 Introduction</h1>
-<p>This section provides details about the parts, costs, and how to solve common problems.</p>
+<p>This section provides details about the parts, costs, and solutions to common problems.</p>
 <h1><a class="anchor" id="initial"></a>
 Initial Concept</h1>
-<p>The initial idea was provided by my lab partner Vinh Vo, inspired by his personal project, the cycloidal gearbox. Curious about how we could implement it into a full-motion project, we decided to use an Inertial Measurement Unit (IMU) to control the cycloidal gearbox. To apply our concepts in Mechanical Engineering with Dynamics, we decided it would throw a projectile. Our professor, Charlie Refvem, suggested making it wirelessly controlled, specifically using Bluetooth. With this information, we designed the first concept using an electric schematic for the parts, as seen in the picture.</p>
-<ul>
-<li><div class="image">
+<p>The initial idea was provided by my lab partner, Vinh Vo, inspired by his personal project, the cycloidal gearbox. <a href="https://www.youtube.com/channel/UCh_4F4CJVqvAhHmCMTvIb-w">Check his YouTube channel</a>. Curious about how we could implement it into a full-motion project, we decided to use an Inertial Measurement Unit (IMU) to control the cycloidal gearbox. To apply our concepts in Mechanical Engineering with Dynamics, we decided it would throw a projectile. Our professor, Charlie Refvem, suggested making it wirelessly controlled, specifically using Bluetooth. With this information, we designed the first concept using an electric schematic for the parts, as seen in the picture.</p>
+<div class="image">
 <img src="overall.png" alt="" width="50%"/>
 <div class="caption">
 The Initial Electric Schematic</div></div>
-</li>
-</ul>
 <div class="image">
 <img src="cycloidalgear.gif" alt="" width="50%"/>
 <div class="caption">
 The Cycloidal Gearbox</div></div>
+<h1><a class="anchor" id="cad_files"></a>
+CAD Files and Process</h1>
+<p>The next step in the process was to design the physical enclosure of the parts. We used SolidWorks to create the CAD models, which included the launcher, the glove controller, and the cycloidal gearbox. They can be seen below.</p>
+<div class="image">
+<img src="CAD.png" alt="" width="50%"/>
+<div class="caption">
+The Launcher CAD</div></div>
+ <div class="image">
+<img src="CG.png" alt="" width="50%"/>
+<div class="caption">
+The Cycloidal Gearbox CAD</div></div>
+ <div class="image">
+<img src="brk.png" alt="" width="50%"/>
+<div class="caption">
+The Controller Frame CAD</div></div>
 <h1><a class="anchor" id="hardware_components"></a>
 Bill of Materials</h1>
 <p>As part of the requirements for this project, our team created a bill of materials, which can be seen <a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx">here</a>. The first tab shows the mechanical parts and parts that we got from Amazon, while the second tab shows our electronic components from the DigiKey website. The URLs are in the Bill of Materials, and the CAD files can be downloaded from there.</p>
@@ -125,46 +137,83 @@ Custom PCB Schematics</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Page   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p1.png">Power Related Parts</a>    </td></tr>
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p1.png">Power-Related Parts</a>    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p2.png">Microcontroller</a>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p3.png">Motor Related Parts</a>    </td></tr>
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p3.png">Motor-Related Parts</a>    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone"><a href="https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p4.png">Additional Components and ESC</a>   </td></tr>
 </table>
-<ul>
-<li><div class="image">
+<div class="image">
 <img src="p1.png" alt="" width="50%"/>
 <div class="caption">
 Page 1</div></div>
-</li>
-<li><div class="image">
+ <div class="image">
 <img src="p2.png" alt="" width="50%"/>
 <div class="caption">
 Page 2</div></div>
-</li>
-<li><div class="image">
+ <div class="image">
 <img src="p3.png" alt="" width="50%"/>
 <div class="caption">
 Page 3</div></div>
-</li>
-<li><div class="image">
+ <div class="image">
 <img src="p4.png" alt="" width="50%"/>
 <div class="caption">
 Page 4</div></div>
-</li>
-</ul>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Controller Glove PCB</h3>
 <p>These images show the PCB for the controller glove and how it is connected to the IMU:</p>
-<ul>
-<li><div class="image">
+<div class="image">
 <img src="PCBCONTROLLER.png" alt="" width="50%"/>
 <div class="caption">
 PCB for the Glove</div></div>
-</li>
-</ul>
+<h3><a class="anchor" id="autotoc_md2"></a>
+The Final Product</h3>
+<p>The following images show the glove controller and the launcher PCB routing that references the schematic shown before. It is a 4-layer PCB with multiple vias and uses DRC (Design Rule Check).</p>
+<div class="image">
+<img src="fp.png" alt="" width="50%"/>
+<div class="caption">
+The Routing of the PCB for the Basketball Launcher</div></div>
+ <div class="image">
+<img src="Routingcontroller.png" alt="" width="50%"/>
+<div class="caption">
+The Routing of the PCB for the Bluetooth Controller</div></div>
+<p>These images show the CAD that was referenced to the footprint:</p>
+<div class="image">
+<img src="pp.png" alt="" width="50%"/>
+<div class="caption">
+The CAD of the Launcher PCB generated from the routing of the PCB</div></div>
+ <div class="image">
+<img src="ECADforcontroller.png" alt="" width="50%"/>
+<div class="caption">
+The CAD of the Bluetooth Controller PCB generated from the routing of the PCB</div></div>
+<p>The next process was to receive the launcher PCB by sending the files to a PCB manufacturer. In our case, we used JLPCB and ordered it with the stencil attached to the frame. Since it has internal pins and Surface Mount Devices (SMD), the traditional line soldering was not effective, so we used the hot plate method. We then applied solder paste and spread it, using a hot plate to make the solder paste bind to the PCB. After the parts were bound, we used heatsinks on top of the motor drivers for heat dissipation in case the parts overheated.</p>
+<div class="image">
+<img src="frame.jpg" alt="" width="50%"/>
+<div class="caption">
+The frame with the stencil sent by the PCB producer</div></div>
+ <div class="image">
+<img src="soldering.jpg" alt="" width="50%"/>
+<div class="caption">
+The PCB with solder paste and mounted components</div></div>
+ <div class="image">
+<img src="hotdish.jpg" alt="" width="50%"/>
+<div class="caption">
+The PCB placed on the hot plate</div></div>
+ <div class="image">
+<img src="finalproduct.jpg" alt="" width="50%"/>
+<div class="caption">
+The Final PCB for the launcher with the heatsink attached</div></div>
+ <div class="image">
+<img src="sideview.jpg" alt="" width="50%"/>
+<div class="caption">
+A side view of the final PCB product</div></div>
+<p>The final part that came to us was the PCB for the controller. Unlike the launcher, we used a Blackpill STM32 F411CEU6, so SMD components were not required. We made a PCB to facilitate the Bluetooth device access and the Inertial Measurement Units (IMU). The rest was hand soldering since they were Arduino headers that go through holes.</p>
+<div class="image">
+<img src="pcb1.png" alt="" width="50%"/>
+<div class="caption">
+The PCB for the Bluetooth controller</div></div>
 <h1><a class="anchor" id="common_problems"></a>
 Common Challenges</h1>
 <p>This section shows some common challenges we encountered and how to troubleshoot them:</p>

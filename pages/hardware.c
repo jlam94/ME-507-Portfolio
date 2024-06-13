@@ -7,17 +7,25 @@
  * @page hardware_page Hardware Documentation
  * 
  * @section hardware_intro Introduction
- * This section provides details about the parts, costs, and how to solve common problems.
+ * This section provides details about the parts, costs, and solutions to common problems.
  * 
  * @section initial Initial Concept
  * 
- * The initial idea was provided by my lab partner Vinh Vo, inspired by his personal project, the cycloidal gearbox. Curious about how we could implement it into a full-motion project, we decided to use an Inertial Measurement Unit (IMU) to control the cycloidal gearbox. To apply our concepts in Mechanical Engineering with Dynamics, we decided it would throw a projectile. 
+ * The initial idea was provided by my lab partner, Vinh Vo, inspired by his personal project, the cycloidal gearbox. [Check his YouTube channel](https://www.youtube.com/channel/UCh_4F4CJVqvAhHmCMTvIb-w). Curious about how we could implement it into a full-motion project, we decided to use an Inertial Measurement Unit (IMU) to control the cycloidal gearbox. To apply our concepts in Mechanical Engineering with Dynamics, we decided it would throw a projectile. 
  * Our professor, Charlie Refvem, suggested making it wirelessly controlled, specifically using Bluetooth. 
  * With this information, we designed the first concept using an electric schematic for the parts, as seen in the picture.
  * 
- * - @image html overall.png "The Initial Electric Schematic" width=50%
+ * @image html overall.png "The Initial Electric Schematic" width=50%
  * 
  * @image html cycloidalgear.gif "The Cycloidal Gearbox" width=50%
+ * 
+ * @section cad_files CAD Files and Process
+ * 
+ * The next step in the process was to design the physical enclosure of the parts. We used SolidWorks to create the CAD models, which included the launcher, the glove controller, and the cycloidal gearbox. They can be seen below.
+ * 
+ * @image html CAD.png "The Launcher CAD" width=50%
+ * @image html CG.png "The Cycloidal Gearbox CAD" width=50%
+ * @image html brk.png "The Controller Frame CAD" width=50%
  * 
  * @section hardware_components Bill of Materials
  * As part of the requirements for this project, our team created a bill of materials, which can be seen [here](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/BOM(UPDATE).xlsx). 
@@ -31,20 +39,43 @@
  * 
  * | Page | Description                  |
  * |------|------------------------------|
- * | 1    | [Power Related Parts](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p1.png)    |
+ * | 1    | [Power-Related Parts](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p1.png)    |
  * | 2    | [Microcontroller](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p2.png)    |
- * | 3    | [Motor Related Parts](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p3.png)          |
+ * | 3    | [Motor-Related Parts](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p3.png)          |
  * | 4    | [Additional Components and ESC](https://raw.githubusercontent.com/jlam94/ME-507-Portfolio/main/images/p4.png)|
  * 
- * - @image html p1.png "Page 1" width=50%
- * - @image html p2.png "Page 2" width=50%
- * - @image html p3.png "Page 3" width=50%
- * - @image html p4.png "Page 4" width=50%
+ *  @image html p1.png "Page 1" width=50%
+ *  @image html p2.png "Page 2" width=50%
+ *  @image html p3.png "Page 3" width=50%
+ *  @image html p4.png "Page 4" width=50%
  * 
  * ### Controller Glove PCB
  * These images show the PCB for the controller glove and how it is connected to the IMU:
  * 
- * - @image html PCBCONTROLLER.png "PCB for the Glove" width=50%
+ *  @image html PCBCONTROLLER.png "PCB for the Glove" width=50%
+ * 
+ * ### The Final Product
+ * The following images show the glove controller and the launcher PCB routing that references the schematic shown before. It is a 4-layer PCB with multiple vias and uses DRC (Design Rule Check).
+ *
+ *  @image html fp.png "The Routing of the PCB for the Basketball Launcher" width=50%
+ *  @image html Routingcontroller.png "The Routing of the PCB for the Bluetooth Controller" width=50%
+ * 
+ * These images show the CAD that was referenced to the footprint:
+ *
+ * @image html pp.png "The CAD of the Launcher PCB generated from the routing of the PCB" width=50%
+ * @image html ECADforcontroller.png "The CAD of the Bluetooth Controller PCB generated from the routing of the PCB" width=50%
+ * 
+ * The next process was to receive the launcher PCB by sending the files to a PCB manufacturer. In our case, we used JLPCB and ordered it with the stencil attached to the frame. Since it has internal pins and Surface Mount Devices (SMD), the traditional line soldering was not effective, so we used the hot plate method. We then applied solder paste and spread it, using a hot plate to make the solder paste bind to the PCB. After the parts were bound, we used heatsinks on top of the motor drivers for heat dissipation in case the parts overheated.
+ * 
+ * @image html frame.jpg "The frame with the stencil sent by the PCB producer" width=50%
+ * @image html soldering.jpg "The PCB with solder paste and mounted components" width=50%
+ * @image html hotdish.jpg "The PCB placed on the hot plate" width=50%
+ * @image html finalproduct.jpg "The Final PCB for the launcher with the heatsink attached" width=50%
+ * @image html sideview.jpg "A side view of the final PCB product" width=50%
+ * 
+ * The final part that came to us was the PCB for the controller. Unlike the launcher, we used a Blackpill STM32 F411CEU6, so SMD components were not required. We made a PCB to facilitate the Bluetooth device access and the Inertial Measurement Units (IMU). The rest was hand soldering since they were Arduino headers that go through holes.
+ * 
+ * @image html pcb1.png "The PCB for the Bluetooth controller" width=50%
  * 
  * @section common_problems Common Challenges
  * This section shows some common challenges we encountered and how to troubleshoot them:

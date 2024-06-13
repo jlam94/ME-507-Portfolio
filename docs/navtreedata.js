@@ -29,6 +29,7 @@ var NAVTREE =
     [ "Hardware Documentation", "hardware_page.html", [
       [ "Introduction", "hardware_page.html#hardware_intro", null ],
       [ "Initial Concept", "hardware_page.html#initial", null ],
+      [ "CAD Files and Process", "hardware_page.html#cad_files", null ],
       [ "Bill of Materials", "hardware_page.html#hardware_components", null ],
       [ "Schematic", "hardware_page.html#schematic", null ],
       [ "Common Challenges", "hardware_page.html#common_problems", null ]
@@ -64,7 +65,7 @@ var NAVTREEINDEX =
 "_ball___launcher___controller_2_core_2_inc_2main_8h.html",
 "_ball___launcher___main_2_core_2_inc_2stm32f4xx__hal__conf_8h.html#a8d8be2d7e4ed5bfc7b64f60ba604c749",
 "globals_d.html",
-"stm32f4xx__it___c_8h.html#a3150f74512510287a942624aa9b44cc5"
+"stm32f4xx__it___c_8h.html#a2bffc10d5bd4106753b7c30e86903bea"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
