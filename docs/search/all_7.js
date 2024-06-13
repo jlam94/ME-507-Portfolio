@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['glove_20pcb_0',['Controller Glove PCB',['../hardware_page.html#autotoc_md1',1,'']]],
+  ['glove_20pcb_0',['Controller Glove PCB',['../hardware_page.html#controller_pcb',1,'']]],
   ['goals_1',['Goals',['../index.html#goals',1,'']]],
   ['gpiox_2',['GPIOx',['../struct_l_e_d_x.html#a1cb502d7339fa12f24109da591102eb2',1,'LEDX::GPIOx'],['../struct_stepper_x.html#a1cb502d7339fa12f24109da591102eb2',1,'StepperX::GPIOx'],['../struct_switch_x.html#a1cb502d7339fa12f24109da591102eb2',1,'SwitchX::GPIOx']]],
   ['gx_3',['gX',['../struct_m_p_u6050.html#af311395520d3063de824b529c9cdb10d',1,'MPU6050::gX'],['../_core_2_src_2main_8c.html#a2613577158a3a316e776cdfa4ad0797c',1,'gX:&#160;main.c'],['../_ball___launcher___controller_2_core_2_src_2main_8c.html#a2613577158a3a316e776cdfa4ad0797c',1,'gX:&#160;main.c'],['../main___c_8c.html#af311395520d3063de824b529c9cdb10d',1,'gX:&#160;main_C.c']]],

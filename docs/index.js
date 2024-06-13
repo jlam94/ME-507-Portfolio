@@ -9,5 +9,6 @@ var index =
     [ "Hardware", "index.html#hardware", null ],
     [ "Software", "index.html#software", null ],
     [ "REPOSITORY REFERENCE", "index.html#repository", null ],
+    [ "Acknowledgments", "index.html#acknowledgments", null ],
     [ "CONTACT INFO", "index.html#info", null ]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['safety_20requirements_3a_0',['The Safety Requirements:',['../index.html#safety_req',1,'']]],
   ['schematic_1',['Schematic',['../hardware_page.html#schematic',1,'']]],
-  ['schematics_2',['Custom PCB Schematics',['../hardware_page.html#autotoc_md0',1,'']]],
+  ['schematics_2',['Custom PCB Schematics',['../hardware_page.html#custom_pcb',1,'']]],
   ['shot_3',['shot',['../_core_2_src_2main_8c.html#a734a6bb09e6a5fc98ebb8436df7ae452',1,'shot:&#160;main.c'],['../_ball___launcher___controller_2_core_2_src_2main_8c.html#a734a6bb09e6a5fc98ebb8436df7ae452',1,'shot:&#160;main.c'],['../main___c_8c.html#a734a6bb09e6a5fc98ebb8436df7ae452',1,'shot:&#160;main_C.c']]],
   ['software_4',['Software',['../index.html#software',1,'']]],
   ['software_20documentation_5',['Software Documentation',['../software_page.html',1,'']]],

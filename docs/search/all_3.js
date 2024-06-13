@@ -11,8 +11,8 @@ var searchData=
   ['common_20challenges_8',['Common Challenges',['../software_page.html#common_problems',1,'']]],
   ['concept_9',['Initial Concept',['../hardware_page.html#initial',1,'']]],
   ['contact_20info_10',['CONTACT INFO',['../index.html#info',1,'']]],
-  ['controller_20glove_20pcb_11',['Controller Glove PCB',['../hardware_page.html#autotoc_md1',1,'']]],
+  ['controller_20glove_20pcb_11',['Controller Glove PCB',['../hardware_page.html#controller_pcb',1,'']]],
   ['counter1_12',['counter1',['../struct_radio_x.html#acbcc8fb505a4cdd9573f816fd073e525',1,'RadioX']]],
   ['counter2_13',['counter2',['../struct_radio_x.html#a7a0a90242eea451f43eeb3e08d6212b2',1,'RadioX']]],
-  ['custom_20pcb_20schematics_14',['Custom PCB Schematics',['../hardware_page.html#autotoc_md0',1,'']]]
+  ['custom_20pcb_20schematics_14',['Custom PCB Schematics',['../hardware_page.html#custom_pcb',1,'']]]
 ];

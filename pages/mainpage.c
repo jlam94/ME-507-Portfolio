@@ -6,7 +6,7 @@
 /**
  * @mainpage MAIN PAGE
  *
- * - @image html FINAL.JPEG "The Final Product, The Basketball Launcher "
+ * - @image html FINAL.JPEG "The Final Product, The Basketball Launcher"
  * - @image html control.png "The Final Product, The Bluetooth Controller"
  * @section goals Goals
  * - Understand the use of wireless protocols like Bluetooth
@@ -16,7 +16,7 @@
  * - Use CubeIDE to code in C and understand the different functions of each hardware pin.
  *
  * @section req Requirements
- * This project requirements were made in California Polytechnic San Luis Obispo and provided by Professor Charlie Revfrem:
+ * This project's requirements were established at California Polytechnic State University, San Luis Obispo, and provided by Professor Charlie Revfrem:
  *
  * @subsection electronics_req The Electronics Requirements:
  * - A custom PCB designed around an STM32F411 MCU (or similar) programmed in either C, C++ (or Rust, with permission).
@@ -46,9 +46,15 @@
  * If you want to learn more about the software, click [here](\ref software_page).
  * 
  * @section repository REPOSITORY REFERENCE
- * All code that will be referenced in this portfolio relate to the project is accessible through https://github.com/jlam94/ME-507-Portfolio.
+ * All code related to this project can be accessed through https://github.com/jlam94/ME-507-Portfolio.
  * 
- * However, you may find it more useful to read through the website exploring the source code.
+ * You may find it more useful to explore the website and the source code.
+ * 
+ * @section acknowledgments Acknowledgments
+ * 
+ * I would like to extend my heartfelt thanks to Professor Charlie Revfrem and Professor Wade for their insightful feedback and thorough review of our PCB and Bluetooth electronics. Their guidance was invaluable throughout this project.
+ *
+ * Special thanks to my lab partner, Vinh T. Vo, for his collaboration and shared experiences in this class. His contributions and enthusiasm were crucial to the success of this project.
  * 
  * @section info CONTACT INFO
  * 
@@ -61,8 +67,8 @@
  * 
  * <b>Phone Number:</b>   (909) 760-9129  
  * 
- * <b>Major:</b>          Mechanical Engineer at Cal Poly San Luis Obispo
+ * <b>Major:</b>          Mechanical Engineering at Cal Poly San Luis Obispo
  * 
- * <b>Date:</b>           May 18, 2024
+ * <b>Date:</b>           June 13, 2024
  * </pre>
  */
